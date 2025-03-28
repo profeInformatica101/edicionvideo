@@ -1,83 +1,206 @@
-
 <html>
-    <head><title>Mi primer video</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous"></head>
-    <body>
-        <div class="container">
-        <h1>Mi primer video</h1>
-         <!-- Herramientas OpenSource de edición de vídeos-->
-        <h2>Herramientas:</h2>
+<head>
+    <title>Mi primer video</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container my-4">
+        <h1><i class="bi bi-camera-video"></i> Mi primer video</h1>
+ <!-- Menú de navegación -->
+ <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><i class="bi bi-camera-video-fill"></i> Proyecto Vídeo</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#herramientas">Herramientas</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#recursos">Recursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#actividad">Actividad</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#pasos">Pasos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#organizacion">Organización</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#rubrica">Rúbrica</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+    <!-- Contenido principal -->
+    <div class="container my-4">
+        <!-- Herramientas OpenSource de edición de vídeos-->
+        <h2 id="herramientas"><i class="bi bi-tools"></i> Herramientas:</h2>
         <ul>
-            <li><a href="https://www.openshot.org/es/download/">Openshot</a> </li>   
-            <li> <a href="https://shotcut.org/download/">Shotcut</a> </li>
+            <li><i class="bi bi-scissors"></i> <a href="https://www.openshot.org/es/download/">Openshot</a></li>
+            <li><i class="bi bi-scissors"></i> <a href="https://shotcut.org/download/">Shotcut</a></li>
         </ul>
-       
+
         <!-- Recursos para realizar los vídeos -->
-        <h2>Recursos:</h2>
+        <h2 id="recursos"><i class="bi bi-box-seam"></i> Recursos:</h2>
         <div class="row">
             <div class="col-sm">
-        <h5>Biblioteca de Sonidos:</h5>
-        <ul>
-            <li><a href="https://freemusicarchive.org/music/charts/all">freemusicarchive</a></li>   
-            <li><a href="http://www.findsounds.com/">Findsounds</a></li>
-            <li><a href="https://www.freesound.org/">Freesounds</a></li>
-            <li><a href="http://soundbible.com/">Soundible</a></li>
-            <li><a href="https://www.youtube.com/audiolibrary/">Youtube AudioLibrary</a></li>
-        </ul>
-    </div>
-    <div class="col-sm">
-        <h5>Bancos de Imágenes:</h5>
-        <ul>
-            <li><a href="https://pixabay.com/es/">Pixabay</a></li>   
-            <li><a href="https://search.creativecommons.org/">search.creativecommons</a></li>
-            <li><a href="http://www.gratisography.com/">Gratisography</a></li>
-            <li><a href="http://www.morguefile.com/">MorgueFile</a></li>
-            <li><a href="http://es.freeimages.com/">FreeImages</a></li>
-        </ul>
-    </div>
-    <div class="col-sm">
-        <h5>Iconos:</h5>
-        <ul>
-            <li><a href="http://www.flaticon.com/">Flaticon</a></li>   
-            <li><a href="https://www.iconfinder.com/">Icofinder</a></li>
-            <li><a href="http://www.iconarchive.com/">iconarchive</a></li>
-            <li><a href="http://findicons.com/">Findicons</a></li>
-        </ul>
-    </div>
-    <div class="col-sm">
-        <h5>Vídeos:</h5>
-        <ul>
-            <li><a href="https://pixabay.com/es/">Pixabay</a></li>
-            <li><a href="http://www.lifeofvids.com/">lifeofvids</a></li>   
-            <li><a href="http://www.vidsplay.com/">vidsplay</a></li>
-            <li><a href="http://mazwai.com/">mazwai</a></li>
-            
-        </ul>
-    </div>
-    </div>
-        <!-- Contenido del vídeo-->
-        <h2>Actividad:</h2>
-        <ul>
-         
-            
-            
-            
-            
-        </ul>
+                <h5><i class="bi bi-volume-up"></i> Biblioteca de Sonidos:</h5>
+                <ul>
+                    <li><a href="https://freemusicarchive.org/music/charts/all">freemusicarchive</a></li>
+                    <li><a href="http://www.findsounds.com/">Findsounds</a></li>
+                    <li><a href="https://www.freesound.org/">Freesounds</a></li>
+                    <li><a href="http://soundbible.com/">Soundible</a></li>
+                    <li><a href="https://www.youtube.com/audiolibrary/">Youtube AudioLibrary</a></li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5><i class="bi bi-image"></i> Bancos de Imágenes:</h5>
+                <ul>
+                    <li><a href="https://pixabay.com/es/">Pixabay</a></li>
+                    <li><a href="https://search.creativecommons.org/">search.creativecommons</a></li>
+                    <li><a href="http://www.gratisography.com/">Gratisography</a></li>
+                    <li><a href="http://www.morguefile.com/">MorgueFile</a></li>
+                    <li><a href="http://es.freeimages.com/">FreeImages</a></li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5><i class="bi bi-stars"></i> Iconos:</h5>
+                <ul>
+                    <li><a href="http://www.flaticon.com/">Flaticon</a></li>
+                    <li><a href="https://www.iconfinder.com/">Icofinder</a></li>
+                    <li><a href="http://www.iconarchive.com/">iconarchive</a></li>
+                    <li><a href="http://findicons.com/">Findicons</a></li>
+                </ul>
+            </div>
+            <div class="col-sm">
+                <h5><i class="bi bi-film"></i> Vídeos:</h5>
+                <ul>
+                    <li><a href="https://pixabay.com/es/">Pixabay</a></li>
+                    <li><a href="http://www.lifeofvids.com/">lifeofvids</a></li>
+                    <li><a href="http://www.vidsplay.com/">vidsplay</a></li>
+                    <li><a href="http://mazwai.com/">mazwai</a></li>
+                </ul>
+            </div>
+        </div>
 
+<!-- Contenido del vídeo-->
+<h2 id="actividad"><i class="bi bi-pencil-square"></i> Actividad:</h2>
+<ul>
+    <li><i class="bi bi-lightbulb"></i> Realizar un vídeo creativo e informativo por parte del alumnado de <strong>2º de Bachillerato del grupo tecnológico</strong>, utilizando recursos libres de sonido, imagen e iconografía. El proyecto debe demostrar dominio de herramientas de edición y respeto por las licencias Creative Commons.</li>
+    <li><i class="bi bi-robot"></i> Integrar el uso de aplicaciones de <strong>Inteligencia Artificial</strong> en el proceso de creación del vídeo. Se recomienda explorar la aplicación disponible en <a href="https://profeinformatica101.github.io/app/" target="_blank">https://profeinformatica101.github.io/app/</a> para generar contenido asistido por IA.</li>
+</ul>
 
-        <h2>Pasos:</h2>
+<h2 id="pasos"><i class="bi bi-list-ol"></i> Pasos:</h2>
+<ol>
+    <li>Crear contenido original mediante la grabación de vídeos con los compañeros.</li>
+    <li>Utilizar herramientas de IA para:
         <ol>
-            <li>Crear carpeta del proyecto: '../nombre_proyecto_video'</li>  
-            <li>Crear subcarpetas del proyecto:
-                <ol>
-                    <li>Imagenes</li>
-                    <li>Sonidos</li>
-                </ol>
-            </li> 
-            <li>Crear guión</li>
+            <li>Generar propuestas de guión.</li>
+            <li>Crear contenido adicional de audio y vídeo que enriquezca el proyecto.</li>
         </ol>
-<img src="https://cedec.intef.es/wp-content/uploads/2020/11/licencias-cc.png" class="img-fluid" alt="Responsive image">
+    </li>
+    <li>Integrar y editar todo el material recopilado, asegurando coherencia y calidad en el producto final.</li>
+</ol>
+<!-- Organización del Proyecto -->
+<h2 id="organizacion"><i class="bi bi-folder"></i> Organización del Proyecto</h2>
+<p>La estructura del proyecto debe estar organizada de la siguiente forma para facilitar el trabajo con los recursos y la herramienta de edición de vídeo:</p>
+
+<pre>
+<code>
++-- &lt;nombre_proyecto&gt;
+│   ├── recursos
+│   │   ├── videos
+│   │   ├── imagenes
+│   │   └── audios
+│   ├── guiones
+│   ├── exportaciones
+│   └── [archivos del proyecto de edición de vídeo]
+</code>
+</pre>
+
+<ul>
+    <li><strong>&lt;nombre_proyecto&gt;:</strong> Carpeta principal del proyecto.</li>
+    <li><strong>recursos:</strong> Contiene todos los materiales multimedia usados en el proyecto.
+        <ul>
+            <li><strong>videos:</strong> Grabaciones y clips de vídeo originales.</li>
+            <li><strong>imagenes:</strong> Imágenes y gráficos utilizados.</li>
+            <li><strong>audios:</strong> Música, narraciones o efectos de sonido.</li>
+        </ul>
+    </li>
+    <li><strong>guiones:</strong> Documentos de planificación, guiones y storyboard.</li>
+    <li><strong>exportaciones:</strong> Carpeta con el vídeo final editado y exportado.</li>
+    <li><strong>archivos del proyecto de edición de vídeo:</strong> Archivos generados por el editor de vídeo (por ejemplo, .prproj, .fcp, etc.).</li>
+</ul>
+<!-- Rúbrica de Evaluación: Privacidad y Uso Responsable en un Proyecto Audiovisual -->
+<h2 id="rubrica"><i class="bi bi-clipboard-check"></i> Rúbrica de Evaluación: Privacidad y <mark>uso responsable</mark>en la <mark>creación de un Vídeo</mark></h2>
+<p>La siguiente rúbrica evalúa cómo se integran los principios de privacidad, derechos digitales y uso responsable de la tecnología en la planificación, edición y difusión del vídeo realizado por el alumnado.</p>
+
+<div class="table-responsive">
+  <table class="table table-bordered table-striped align-middle text-center">
+    <thead class="table-dark">
+      <tr>
+        <th>Criterios</th>
+        <th>Insuficiente<br>(1)</th>
+        <th>Aceptable<br>(2)</th>
+        <th>Notable<br>(3)</th>
+        <th>Excelente<br>(4)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><strong>Uso de datos personales</strong><br>Reflejo de un tratamiento responsable de la imagen, voz y datos personales de los participantes.</td>
+        <td>Se utilizan datos personales sin consentimiento o sin reflexión ética.</td>
+        <td>Se intenta respetar la privacidad, pero hay fallos en la ejecución.</td>
+        <td>Se aplican buenas prácticas de privacidad y consentimiento.</td>
+        <td>Excelente gestión de la privacidad con evidencias de consentimiento y enfoque educativo.</td>
+      </tr>
+      <tr>
+        <td><strong>Derechos digitales</strong><br>Aplicación y difusión de los derechos digitales en el contenido del vídeo.</td>
+        <td>No se explicitan ni se integran los derechos digitales.</td>
+        <td>Se mencionan algunos derechos de forma superficial.</td>
+        <td>Se explican y contextualizan adecuadamente en el vídeo.</td>
+        <td>Se promueven activamente y se relacionan con el contenido y difusión del proyecto.</td>
+      </tr>
+      <tr>
+        <td><strong>Ciberacoso</strong><br>Tratamiento adecuado del tema en el guion, escenas o mensaje final del vídeo.</td>
+        <td>El vídeo ignora o banaliza el tema del ciberacoso.</td>
+        <td>Se menciona brevemente sin desarrollo narrativo.</td>
+        <td>Incluye mensajes o situaciones que fomentan la reflexión.</td>
+        <td>Propone acciones concretas y muestra compromiso claro de prevención.</td>
+      </tr>
+      <tr>
+        <td><strong>Redes sociales</strong><br>Enfoque crítico sobre el uso de redes y su relación con la privacidad.</td>
+        <td>Se promueve un uso irresponsable o irreflexivo.</td>
+        <td>Se presentan las redes sin valorar sus riesgos.</td>
+        <td>Se expone un uso consciente con ejemplos útiles.</td>
+        <td>Se promueve el uso ético y responsable con recomendaciones claras.</td>
+      </tr>
+      <tr>
+        <td><strong>Buenas prácticas digitales</strong><br>Respeto de licencias, derechos de autor y uso ético de los recursos en el vídeo.</td>
+        <td>No se respetan licencias ni se citan las fuentes de los recursos.</td>
+        <td>Se citan algunas fuentes pero de forma incompleta o incorrecta.</td>
+        <td>Se respetan licencias y se citan adecuadamente los recursos utilizados.</td>
+        <td>Además de lo anterior, se promueve la educación en el uso legal y responsable de los contenidos digitales.</td>
+      </tr>
+    </tbody>
+  </table>
+  <img src="https://cedec.intef.es/wp-content/uploads/2020/11/licencias-cc.png" class="img-fluid mt-3" alt="Licencias Creative Commons">
+</div>
+
+       
     </div>
-    </body>
-    </html>
+  </div>
+
+  <!-- Bootstrap JS (para que funcione el menú responsive) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
