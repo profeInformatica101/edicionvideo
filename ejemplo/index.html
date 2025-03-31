@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Protección de la Información - C.I.A.</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 2em;
+    }
+
+    h1, h2 {
+      color: #333;
+    }
+
+    video {
+      width: 100%;
+      max-width: 800px;
+      display: block;
+      margin: 1em auto;
+      border: 3px solid #555;
+      border-radius: 10px;
+    }
+
+    .quiz {
+      background: white;
+      padding: 1em;
+      max-width: 800px;
+      margin: auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .question {
+      margin-bottom: 1em;
+    }
+
+    button {
+      background-color: #0077cc;
+      color: white;
+      padding: 0.6em 1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    #resultado {
+      margin-top: 1em;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h1>Protección de la Información: C-I-A</h1>
+
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/hOE2BPqXl2w?si=9HorbXHhKJXPCZIn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+  <div class="quiz">
+    <h2>Test de comprensión</h2>
+
+    <div class="question">
+      <p><strong>1. ¿Qué garantiza la disponibilidad?</strong></p>
+      <label><input type="radio" name="q1" value="a"> Que los datos no se alteren sin permiso</label><br>
+      <label><input type="radio" name="q1" value="b"> Que los datos estén accesibles cuando se necesiten</label><br>
+      <label><input type="radio" name="q1" value="c"> Que solo usuarios autorizados accedan</label>
+    </div>
+
+    <div class="question">
+      <p><strong>2. ¿Qué protege la integridad?</strong></p>
+      <label><input type="radio" name="q2" value="a"> Que los datos estén siempre en línea</label><br>
+      <label><input type="radio" name="q2" value="b"> Que los datos sean correctos y sin alteraciones</label><br>
+      <label><input type="radio" name="q2" value="c"> Que estén cifrados</label>
+    </div>
+
+    <div class="question">
+      <p><strong>3. ¿Qué busca la confidencialidad?</strong></p>
+      <label><input type="radio" name="q3" value="a"> Que cualquiera pueda ver los datos</label><br>
+      <label><input type="radio" name="q3" value="b"> Que se mantengan copias de seguridad</label><br>
+      <label><input type="radio" name="q3" value="c"> Que solo las personas autorizadas accedan a la información</label>
+    </div>
+
+    <button onclick="corregir()">Enviar respuestas</button>
+    <p id="resultado"></p>
+  </div>
+
+  <script>
+    function corregir() {
+      const respuestas = {
+        q1: "b",
+        q2: "b",
+        q3: "c"
+      };
+      let aciertos = 0;
+
+      for (let key in respuestas) {
+        const opciones = document.getElementsByName(key);
+        for (let i = 0; i < opciones.length; i++) {
+          if (opciones[i].checked && opciones[i].value === respuestas[key]) {
+            aciertos++;
+          }
+        }
+      }
+
+      document.getElementById("resultado").textContent =
+        `Has acertado ${aciertos} de 3 preguntas.`;
+    }
+  </script>
+<h1>Ejemplo</h1>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vToAGV82wt3IC68QL5QfHYClG0HSHq8ednwserNAWaom7nLdbBEqXmCOzLZjN76aKKjvok6UJc-re0x/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+
+</body>
+</html>
